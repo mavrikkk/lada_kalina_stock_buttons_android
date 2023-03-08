@@ -57,7 +57,7 @@ void setup()
 	Serial.begin(115200);
 #endif
 
-	PRINTLN("Started...");
+  PRINTLN("Started...");
 
   btnP.setHoldTimeout(BTN_SET);
   btnP.setStepTimeout(BTN_SEND);
@@ -128,7 +128,7 @@ void loop()
     set_mode = !set_mode;
   }
   
-	update_state(); // парсим и обновляем статус енкодера
+  update_state(); // парсим и обновляем статус енкодера
   volume_tick();  // обработка команд, связанных с енкодером
   power_tick();   // обработка команд, связанных с кнопкой питания
 }
